@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空白地 | 企划官方站点</title>
+   
+    <link rel="preload" href="./images/boss1 (1).webp" as="image">
+    <link rel="preload" href="./images/boss设卡.webp" as="image">
+    <link rel="preload" href="./images/三兔共耳 (2).webp" as="image">
+    <link rel="preload" href="./images/初始场地.webp" as="image">
+    <link rel="preload" href="./images/永夜嘉年华.webp" as="image">
+    <link rel="preload" href="./images/空白地1.webp" as="image">
+    <link rel="preload" href="./images/空白地2.webp" as="image">
+    <link rel="preload" href="./images/空白地3.webp" as="image">
+    <link rel="preload" href="./images/空白地4.webp" as="image">
+    <link rel="preload" href="./images/空白地5.webp" as="image">
+    <link rel="preload" href="./images/空白地logo2.webp" as="image">
+    <link rel="preload" href="./images/空白地玩家设卡.webp" as="image">
+    <link rel="preload" href="./images/黑白方.webp" as="image">
+    <link rel="preload" href="./images/鹤见早春.webp" as="image">
+    <link rel="preload" href="./images/街尾蛇酒馆.webp" as="image">
+    <link rel="preload" href="./images/第七病栋.webp" as="image">
+    <link rel="preload" href="./images/立绘4.webp" as="image">
+    <link rel="preload" href="./images/立绘3.webp" as="image">
+    <link rel="preload" href="./images/立绘2.webp" as="image">
+    <link rel="stylesheet" href="./index.css"> 
+<style>
+/* 页面出场淡入 */
+body {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+body.show-page {
+    opacity: 1;
+}
+/* 页面内部预加载遮罩（等全部图片加载完成再显示页面） */
+#img-preload {
+    position: fixed;
+    inset: 0;
+    background: #f9fbff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+#img-preload.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.load-circle {
+    width: 64px;
+    height: 64px;
+    border: 4px solid #eef3fc;
+    border-top-color: #0b7cd3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {transform: rotate(360deg);}
+}
+</style>
+</head>
+<body>
+<!-- 图片预加载遮罩，进入页面自动加载所有轮播图 -->
+<div id="img-preload">
+    <div class="load-circle"></div>
+</div>
+
+    <nav class="navigation">
+        <div class="logo">
+            <img src="./images/空白地logo2.webp" alt="空白地LOGO">
+        </div>
+        <div class="nav-wrap">
+            <a href="#qihua">企划详细</a>
+            <a href="#rule">空白地规则</a>
+            <a href="#fubenchoose">副本详情</a>
+            <a href="#character">BOSS详情</a>
+        </div>
+    </nav>
+
+
+    <section class="alter" id="banner">
+        <div class="tips-sidebar">
+            <div class="sidebar-content">
+                <a href="#" class="link1">宣传图</a>
+                <a href="#" class="link2">玩家设卡</a>
+                <a href="#" class="link3">BOSS设卡</a>
+                <a href="#" class="link4">初始场地</a>
+            </div>
+        </div>
+        <div class="banner-pic">
+            <img src="./images/空白地4.webp" class="pic1" alt="宣传主图">
+            <img src="./images/空白地玩家设卡.webp" class="pic2" alt="玩家设卡">
+            <img src="./images/boss设卡.webp" class="pic3" alt="BOSS设卡">
+            <img src="./images/初始场地.webp" class="pic4" alt="初始场地">
+        </div>
+
+        <div class="banner-mask"></div>
+    </section>
+
+
+    <section class="intro-block" id="qihua">
+        <div class="intro-text">
+            <h2>「空白地」企划导入</h2>
+            <div class="divider-line"></div>
+            <p>白色和白色和无穷无尽的白色</p>
+            <p>空白之地上的过家家游戏</p>
+            <p>费劲心力只为了取悦自己</p>
+            <p>来自各样时空</p>
+            <p>发配身份，组成棋局</p>
+            <p>离开的方法？</p>
+            <p class="highlight-text">自然是：让"它"尽兴</p>
+            <h3>这是“祂们”留给你们的忠告——</h3>
+        </div>
+    </section>
+
+
+    <ul class="quote-list">
+        <li class="quote-card">
+            <img src="./images/空白地1.webp" alt="黎隐">
+            <div class="card-text">
+                <p class="review">“欢迎～，我由衷的希望你们倒大霉”</p>
+                <div class="resource">来自黎隐的「祝福」</div>
+                <div class="warn">
+                    <h4><a href="#" class="click-link">快来享受灵魂被吞噬吧…</a></h4>
+                </div>
+            </div>
+        </li>
+        <li class="quote-card">
+            <img src="./images/空白地2.webp" alt="血钾">
+            <div class="card-text">
+                <p class="review">“去掉所有符号，我们的生命才有价值”</p>
+                <div class="resource">来自血钾的「回声」</div>
+                <div class="warn">
+                    <h4><a href="#" class="click-link">你是否能给出自己的价值呢?</a></h4>
+                </div>
+            </div>
+        </li>
+        <li class="quote-card">
+            <img src="./images/空白地5.webp" alt="鹤见早春">
+            <div class="card-text">
+                <p class="review">“语言是不足以评判美的，要用心，用你的眼睛，用你的爱”</p>
+                <div class="resource">来自鹤见早春的「提醒」</div>
+                <div class="warn">
+                    <h4><a href="#" class="click-link">你是否能体会爱呢？</a></h4>
+                </div>
+            </div>
+        </li>
+        <li class="quote-card last-card">
+            <img src="./images/空白地3.webp" alt="七宁">
+            <div class="card-text">
+                <p class="review">“请尽情享受游戏吧，我很期待各位的通关方式和死法～”</p>
+                <div class="resource">来自七宁的「期待」</div>
+                <div class="warn">
+                    <h4><a href="#" class="click-link">是……True Ending？</a></h4>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <section class="intro-block" id="rule">
+        <div class="intro-text">
+            <h2>空白地规则</h2>
+            <div class="divider-line"></div>
+            <p>玩家由原驻地随机选择传送进来</p>
+            <p>只有完成原驻地的任务后才能离开</p>
+            <p>两位系统为原驻地的代表</p>
+            <p>副本内死亡即出局，原驻地不会令人真正的死亡</p>
+            <p>可以向系统索要无特殊作用的物品</p>
+            <p>不允许在初始原驻地内使用能力</p><br/>
+            <h3>欢迎来到原驻地，祝玩的开心</h3>
+        </div>
+    </section>
+
+    <section class="fuben-wrap" id="fubenchoose">
+        <h2 class="block-title">副本详情</h2>
+        <div class="divider-line"></div>
+
+        <div class="fuben-item">
+            <div class="fuben-img-box">
+                <a href="#"><img src="./images/永夜嘉年华.webp" alt="永夜嘉年华"></a>
+            </div>
+            <div class="fuben-desc">
+                <h3>·副本名称：永夜嘉年华</h3>
+                <h4>·等级：C级（适合多人小队）</h4>
+                <h4>·通关时限：现实时间6小时，副本内时间「直到黎明」</h4>
+                <h4 class="text-blue">——但这里永远不会有黎明。</h4>
+                <h4>副本boss：无</h4>
+                <p>十年前，小镇边缘的“月蚀游乐园”在万圣节夜举行了一场秘密试运营。那一天，游乐园的创始人霍夫曼先生，为了复活病逝的女儿，与某个“存在”做了交易——用游客的恐惧与生命，点燃一台名为“永恒之心”的机器。仪式失败了。或者说，成功了，但代价是整座游乐园被拖入了一个永夜的空间夹缝。霍夫曼消失了，游客与员工变成了扭曲的玩偶，日复一日重演着那场噩梦。进入副本的玩家，将扮演“误入废弃游乐园的游客”。</p>
+                <p>你们的任务：找到“永恒之心”并关闭它，或者——找到霍夫曼女儿的灵魂，带她离开。</p>
+            </div>
+        </div>
+
+        <div class="fuben-item reverse">
+            <div class="fuben-img-box">
+                <a href="#"><img src="./images/第七病栋.webp" alt="第七病栋"></a>
+            </div>
+            <div class="fuben-desc">
+                <h3>副本名称：第七病栋<br/></h3>
+                <h4>副本类型：探索解密<br/>人数要求：无，建议五人以上<br/>推荐时长：6h
+                <br/>副本boss：？</h4>
+                <p>简介：</p>
+                <p>“欢迎各位来到第七病栋，我是你们的主治医生——苏尘。在接下来的七天里，我将和你们一起探索如何逃出这里……然后那个谁，对就是你，能不能把手电筒关掉啊很亮很伤人眼睛诶。”
+喧喧嚷嚷却空无一人的大厅，循环滚动的值班医生列表只有重复的苏尘两个字，破碎的镜子，悄无声息爬上病人名册里拼出熟悉名字的墨虫，断裂的麻绳，散落一地的药瓶，发霉的墙缝，灯泡里的眼睛，黑暗中的扭曲人体，散落纸张上的数字……
+“你怎么又把你那破手电筒打开了！你那个手电筒哪来的都能照亮我的前途了我眼睛要被闪瞎了！！！”<br/>
+“厕所为什么建的和大厅一样大？我怎么知道这又不是我干的。”<br/>
+“我没病。你们有病。有大病。”<br/>
+“镜子是这个世界上最没情商的东西。”<br/>
+“你脑子有病吧要不是有人逼谁会想死。”<br/>
+“我讨厌黑漆漆的一片。”<br/>
+“我讨厌光。”</p>
+               
+            </div>
+        </div>
+
+        <div class="fuben-item">
+            <div class="fuben-img-box">
+                <a href="#"><img src="./images/鹤见早春.webp" alt="课堂的第四十二条戒律"></a>
+            </div>
+            <div class="fuben-desc">
+                <h3>《课堂的第四十二条戒律》</h3>
+                <p>副本类型:日式校园诡谲/规则审判/美学炼狱</p>
+                <p>参与人数：不限</p>
+                <p>预计时长：4～5h</p>
+                <p>副本boss：鹤见早春</p>
+                <p>简介: </p>
+                <p>本副本存在唯一的、不可撤销的《第四十二条课堂戒律》:</p>
+                <p>“任何走神、谬误、答非所问或思维停滞，乃至交头接耳，目光，肢体上的交流。
+                均视为学生出现‘构图崩坏’的情况。将被老师处以美学修正。”</p>
+            </div>
+        </div>
+
+        <div class="fuben-item reverse">
+            <div class="fuben-img-box">
+                <a href="#"><img src="./images/三兔共耳 (2).webp" alt="三兔共耳"></a>
+            </div>
+            <div class="fuben-desc">
+                <h3>副本名称：「三兔共耳」</h3>
+                <h4>副本类型：西方玄幻/悬疑推理/微恐</h4>
+                <h4>人数要求：1～8人</h4>
+                <h4 class="text-red">预警标签：此副本禁止时间、空间、预言类技能</h4>
+                <p>「欢迎您，尊贵的灵异猎人们，欢迎来到这座庄园」</p>
+                <p>金色的火焰在那里，兔子们在跳舞，看到了吗?</p>
+                <p>那些残缺的兔子们，我们也是其中的一员 ^_^</p>
+                <p class="text-gray">推荐时长：3～4小时</p>
+            </div>
+        </div>
+
+        <div class="fuben-item">
+            <div class="fuben-img-box">
+                <a href="#"><img src="./images/街尾蛇酒馆.webp" alt="衔尾蛇酒廊"></a>
+            </div>
+            <div class="fuben-desc">
+                <h3>永夜赌约・衔尾蛇酒廊</h3>
+                <h4>副本类型:宗教玄幻解密</h4>
+                <h4>人数要求:不限</h4>
+                <h4>预计时长：4h</h4>
+                <h4>副本boss：因佩里图斯·格林斯通</h4>
+                <p>酒廊并非固定空间，而是衔尾蛇之环。每完成一个区域任务，空间会折叠重置，场景细节、NPC 状态、怪物分布均会发生不可逆变化。</p>
+                <p>核心矛盾从「化解执念」升级为「甄别真相」，三位故人的执念背后，是被篡改的记忆与格林的真实身份。</p>
+            </div>
+        </div>
+
+        <div class="fuben-item reverse">
+            <div class="fuben-img-box">
+                <a href="#"><img src="./images/黑白方.webp" alt="黑白方"></a>
+            </div>
+            <div class="fuben-desc">
+                <h3>黑白方</h3>
+                <h4>副本类型:反乌托邦</h4>
+                <h4>人数要求:不限</h4>
+                <h4>预计时长：3h</h4>
+                <h4>副本boss：？？</h4>
+                <p>简介：</p>
+                <p>无名者，有序列<br/>流水线尽余空台<br/>习得言语皆赴远<br/>后来人自溯其源</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOSS立绘展示区 -->
+    <section class="boss-area" id="character">
+        <h2 class="block-title">「祂」们会陪你到最后的……</h2>
+        <div class="divider-line"></div>
+        <div class="boss-container">
+            <div class="boss-card">
+                <div class="boss-mask"></div>
+                <img src="./images/boss1.png" alt="BOSS立绘1">
+            </div>
+            <div class="boss-card">
+                <div class="boss-mask"></div>
+                <img src="./images/立绘4.png" class="img4" alt="BOSS立绘4">
+            </div>
+            <div class="boss-card">
+                <div class="boss-mask"></div>
+                <img src="./images/立绘3.png" alt="BOSS立绘3">
+            </div>
+            <div class="boss-card">
+                <div class="boss-mask"></div>
+                <img src="./images/立绘2.png" alt="BOSS立绘2">
+            </div>
+        </div>
+    </section>
+
+   <script>
+// 图片预加载逻辑
+const preloadMask = document.getElementById('img-preload');
+const body = document.body;
+const allBannerImgs = document.querySelectorAll('.banner-pic img');
+let loadNum = 0;
+const total = allBannerImgs.length;
+
+function imgLoaded() {
+    loadNum++;
+    if(loadNum >= total){
+        setTimeout(()=>{
+            preloadMask.classList.add('loaded');
+            body.classList.add('show-page');
+        }, 800)
+    }
+}
+
+allBannerImgs.forEach(img=>{
+    if(img.complete) imgLoaded();
+    img.onload = imgLoaded;
+    img.onerror = imgLoaded;
+})
+
+// 兜底4秒强制加载完成
+setTimeout(()=>{
+    preloadMask.classList.add('loaded');
+    body.classList.add('show-page');
+}, 4000)
+</script>
+
+</body> 
+</html>
